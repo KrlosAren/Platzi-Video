@@ -1,9 +1,9 @@
 body{
     margin: 0px;
     font-family: 'Muli', sans-serif;
-    background-color: #5E1DFC;
 }
 .header{
+    background-color: #5E1DFC;
     width: 100%;
     height: 80px;
     display: flex;
@@ -54,13 +54,13 @@ body{
     color: white;
 }
 .main{
+    background: #5E1DFC;
     width: 100%;
     height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
-    border-radius: 0px 0px 40px 40px;
+    padding: 50px 0px 0px 0px;
 }
 .main__title{
     color: white;
@@ -84,6 +84,7 @@ body{
 /* Titulos Main */
 
 .categories__title{
+    background-color: #5E1DFC;
     color: white;
     font-size: 16px;
     padding-left: 30px;
@@ -92,13 +93,11 @@ body{
 /* CARROUSEL */
 
 .carousell{
+    background-color: #5E1DFC;
     width: 100%;
     overflow: hidden;
     padding: 0px 0px 30px;
     position: relative;
-}
-.carousell:hover{
-    overflow: scroll;
 }
 .carousell__container{
     transition: 450ms -webkit-transform;
@@ -178,9 +177,44 @@ body{
     margin-top:5px;
   }
 
+
+/* ERROR 404 */
+
+.error__message{
+   background: #5E1DFC;
+   width: 100%;
+   height: 455px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.error--title{
+    color: white;
+    font-size: 100px;
+}
+.error--subtitle{
+    color: white;
+    padding: 0px 0px 100px 0px;
+}
+.animated{
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+@keyframes pulse{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+.pulse{
+    animation-name: pulse;
+    animation-duration: 2.5s;
+}
+
 /* FOOTER */ 
 
 .footer{
+    background-color: #5E1DFC;
     display: flex;
     align-items: center;
     height: 100px;
